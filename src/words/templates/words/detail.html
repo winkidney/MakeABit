@@ -1,0 +1,10 @@
+{% extends 'words/base.html' %}
+{% block title %}
+  Make A Bit Detail
+{% endblock %}
+{% block body %}
+<h1>Author: {{ object.author }}</h1>
+<p>Content: {{ object.content }}</p>
+<p>Tags: {% for tag in object.tags.all %}{{ tag.name }} {% endfor %}</p>
+<p>Types: {% for type in object.types.all %}{{ type.name }} {% endfor %}</p>
+{% endblock %}

@@ -6,7 +6,10 @@
 <h1>Sentences</h1>
 <ul>
 {% for word in object_list %}
-    <li>{{ word.content }} - {{ word.author }}</li>
+    <li>
+      {{ word.content }} - {{ word.author }} -
+      <a href="/sentences/{{ word.id }}">Link</a>
+    </li>
 {% empty %}
     <li>No sentences yet.</li>
 {% endfor %}

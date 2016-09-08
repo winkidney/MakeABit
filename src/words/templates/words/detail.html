@@ -7,4 +7,9 @@
 <p>Content: {{ object.content }}</p>
 <p>Tags: {% for tag in object.tags.all %}{{ tag.name }} {% endfor %}</p>
 <p>Types: {% for type in object.types.all %}{{ type.name }} {% endfor %}</p>
+<p>Link:
+  <a href="/sentences/{{ object.id }}">
+    /sentences/{{ object.id }}
+  </a>
+</p>
 {% endblock %}

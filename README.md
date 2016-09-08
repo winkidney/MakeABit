@@ -1,2 +1,2 @@
 # MakeABit
-Give you on of the node 
+A sentence collection and display server.

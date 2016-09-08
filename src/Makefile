@@ -10,3 +10,6 @@ develop:
 
 mk-config:
 	python tools.py gen_production_setting
+
+gunicorn:
+	gunicorn sentence.wsgi

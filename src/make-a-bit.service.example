@@ -1,0 +1,11 @@
+[Unit]
+Description=MakeABit server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/gunicorn sentence.wsgi -b :8000
+Restart=on-failure
+WorkingDirectory=/path/to/your/project
+
+[Install]
+WantedBy=multi-user.target

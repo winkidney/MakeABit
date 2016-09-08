@@ -7,3 +7,6 @@ install:
 
 develop:
 	python manage.py runserver 0.0.0.0:8000
+
+mk-config:
+	python tools.py gen_production_setting
